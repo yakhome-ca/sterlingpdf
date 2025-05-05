@@ -2,6 +2,7 @@ version: '3.3'
 services:
   stirling-pdf:
     image: stirlingtools/stirling-pdf:latest
+    restart: unless-stopped
     ports:
       - '8344:8080'
     volumes:
